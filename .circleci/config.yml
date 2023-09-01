@@ -26,6 +26,6 @@ jobs:
           name: Deploy app to Firebase
           command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN
 workflows:
-  build-and-deploy:
+  build-and-test:
     jobs:
       - build
