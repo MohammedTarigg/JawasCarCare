@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/project
     docker:
-      - image: cimg/node:18.16.0
+      - image: cimg/node:20.5.1
     steps:
       - checkout
       - run:
@@ -26,6 +26,6 @@ jobs:
           name: Deploy app to Firebase
           command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN
 workflows:
-  build-and-test:
+  build-and-deploy:
     jobs:
       - build
