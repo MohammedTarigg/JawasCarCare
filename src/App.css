@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+body {
+  overflow-x: hidden;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes slideOutLeft {
   from {
-    transform: rotate(0deg);
+    transform: translateX(0);
   }
   to {
-    transform: rotate(360deg);
+    transform: translateX(-100%);
+  }
+}
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.slideInFromRightClass {
+  animation: slideInFromRight 1s forwards ease;
+}
+.slideInFromLeftClass {
+  animation: slideInFromLeft 1s forwards ease;
+}
+.slideOutRightClass {
+  animation: slideOutRight 1s forwards ease;
+}
+.slideOutLeftClass {
+  animation: slideOutLeft 1s forwards ease;
+}
+.showBackground {
+  display: block;
+}
+.hideBackground {
+  display: none;
+}
+.appbar-menu-icon * {
+  color: white;
+}
+.css-i4bv87-MuiSvgIcon-root {
+  color: white;
+}
+.css-mf1cb5-MuiButtonBase-root-MuiIconButton-root:has(
+    .css-i4bv87-MuiSvgIcon-root
+  ) {
+  height: 55px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+@keyframes floatUp {
+  0% {
+    top: 100%;
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    top: 0vh;
+    opacity: 0.8;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    top: -100%;
+    opacity: 0;
   }
 }
