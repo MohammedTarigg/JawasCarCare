@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import KeyboardDoubleArrowLeftIcon from "@mui/icons-material/KeyboardDoubleArrowLeft";
 import DirectionsCarIcon from "@mui/icons-material/DirectionsCar";
 import PrimaryButton from "../components/PrimaryButton.jsx";
 

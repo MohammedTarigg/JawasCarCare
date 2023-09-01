@@ -20,7 +20,7 @@ import { BackGroundLight } from "../components/CalculateAnimations";
 
 const Layout = () => {
   const [backgroundNo, setBackgroundNo] = useState("0");
-  const [currentBackground, setCurrentBackground] = useState(backImage1);
+  const [, setCurrentBackground] = useState(backImage1);
   const prevBackgroungRef = useRef("-1");
 
   const backgrounds = [
