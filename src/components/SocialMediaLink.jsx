@@ -16,6 +16,7 @@ const SocialMediaLink = ({ children }) => {
         return "#";
     }
   }
+  console.log(children.type.name);
   return (
     <Link
       href={getLink(children.type.name)}

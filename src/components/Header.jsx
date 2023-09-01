@@ -134,7 +134,7 @@ const Header = ({ homeRef, servicesRef, contactRef, aboutRef }) => {
                   md: "none",
                 },
 
-                " .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root": {
+                "> .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root": {
                   backgroundColor: "rgba(255,255,255,0.5)",
                   mixBlendMode: "darken",
                   p: 1,
@@ -281,7 +281,7 @@ const Header = ({ homeRef, servicesRef, contactRef, aboutRef }) => {
                   xs: "none",
                   md: "flex",
                 },
-                " .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root": {
+                "> .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root": {
                   display: "none",
                 },
               }}>
