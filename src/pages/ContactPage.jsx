@@ -31,7 +31,7 @@ const ContactPage = () => {
           flexDirection: "column",
           boxShadow: "1px 2px 5px grey",
           borderRadius: 4,
-          p: 3,
+          p: 2,
         }}>
         <Box>
           <Typography variant="h5">{t(`Phone`)}</Typography>
@@ -72,12 +72,14 @@ const ContactPage = () => {
             direction: "ltr",
             display: "flex",
             justifyContent: "space-between",
+            flexWrap: "wrap",
           }}>
           <Typography variant="h6">Jawas.carcareqa@gmail.com</Typography>
           <PrimaryButton
             target="_blank"
             rel="noopener noreferrer"
-            href={`mailto:jawas.carcareqa@gmail.com`}>
+            href={`mailto:jawas.carcareqa@gmail.com`}
+            sx={{ marginLeft: "auto" }}>
             <EmailIcon sx={{ "&hover": { color: "black" } }} />
           </PrimaryButton>
         </Box>
@@ -92,16 +94,16 @@ const ContactPage = () => {
             fontSize: "40px",
             gap: 4,
           }}>
-          <SocialMediaLink>
+          <SocialMediaLink name="FaInstagram">
             <FaInstagram />
           </SocialMediaLink>
-          <SocialMediaLink>
+          <SocialMediaLink name="FaTiktok">
             <FaTiktok />
           </SocialMediaLink>
-          <SocialMediaLink>
+          <SocialMediaLink name="FaSnapchat">
             <FaSnapchat />
           </SocialMediaLink>
-          <SocialMediaLink>
+          <SocialMediaLink name="FaFacebook">
             <FaFacebook />
           </SocialMediaLink>
         </Box>

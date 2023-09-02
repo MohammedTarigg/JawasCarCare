@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "@mui/material/Link";
 
-const SocialMediaLink = ({ children }) => {
+const SocialMediaLink = ({ children, name }) => {
   function getLink(name) {
     switch (name) {
       case "FaFacebook":
@@ -16,11 +16,10 @@ const SocialMediaLink = ({ children }) => {
         return "#";
     }
   }
-  console.log(children.type.name);
   return (
     <Link
-      href={getLink(children.type.name)}
-      title={children.type.name}
+      href={getLink(name)}
+      title={name}
       target="_blank"
       sx={{
         width: "60px",

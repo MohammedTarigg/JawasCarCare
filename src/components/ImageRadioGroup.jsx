@@ -28,18 +28,10 @@ const ImageRadioGroup = ({ bgNo, setBg }) => {
           gap: 2,
           flexWrap: "wrap",
           flexDirection: "row",
-          "> .css-ntkmf7-JoySheet-root": {
-            bgcolor: "transparent",
-          },
         }}>
         {["0", "1", "2", "3", "4"].map((key, index) => (
           <Sheet key={index}>
-            <Radio
-              value={key}
-              sx={{
-                bgcolor: "transparent",
-              }}
-            />
+            <Radio value={key} />
           </Sheet>
         ))}
       </RadioGroup>
