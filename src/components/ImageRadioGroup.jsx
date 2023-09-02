@@ -4,6 +4,7 @@ import Radio from "@mui/joy/Radio";
 import RadioGroup from "@mui/joy/RadioGroup";
 import Sheet from "@mui/joy/Sheet";
 import { useTranslation } from "react-i18next";
+import "../App.css";
 
 const ImageRadioGroup = ({ bgNo, setBg }) => {
   const { t } = useTranslation();
@@ -37,14 +38,6 @@ const ImageRadioGroup = ({ bgNo, setBg }) => {
               value={key}
               sx={{
                 bgcolor: "transparent",
-                ">.Mui-checked": {
-                  border: "none",
-                },
-                " .css-8kj30y-JoyRadio-icon": {
-                  color: "yellow",
-                  width: "100%",
-                  height: "100%",
-                },
               }}
             />
           </Sheet>

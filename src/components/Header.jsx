@@ -107,7 +107,6 @@ const Header = ({ homeRef, servicesRef, contactRef, aboutRef }) => {
           }
           <Box
             sx={{
-              // flexGrow: 1,
               flexDirection: `${
                 t("Language") === "English" ? "row" : "row-reverse"
               }`,
@@ -122,6 +121,7 @@ const Header = ({ homeRef, servicesRef, contactRef, aboutRef }) => {
               aria-label="Navbar"
               aria-controls="menu-appbar"
               aria-haspopup="true"
+              id="menu-appbar"
               onClick={handleOpenNavMenu}>
               <MenuIcon />
             </IconButton>
@@ -132,12 +132,6 @@ const Header = ({ homeRef, servicesRef, contactRef, aboutRef }) => {
                 display: {
                   xs: "flex",
                   md: "none",
-                },
-
-                "> .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root": {
-                  backgroundColor: "rgba(255,255,255,0.5)",
-                  mixBlendMode: "darken",
-                  p: 1,
                 },
               }}>
               <Select
