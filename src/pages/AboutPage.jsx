@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
-import tintImage from "../img/services/tinting.jpg";
+import aboutImage from "../img/aboutImage.jpg";
 
 const AboutPage = () => {
   const { t } = useTranslation();
@@ -63,9 +63,21 @@ const AboutPage = () => {
             flexGrow={1}
             sx={{
               height: "460px",
+              display: "flex",
+              justifyContent: "center",
               width: { xs: "100%", sm: "50%" },
-              backgroundImage: `url(${tintImage})`,
-            }}></Box>
+            }}>
+            <img
+              src={aboutImage}
+              alt="About Page"
+              style={{
+                borderRadius: "16px",
+                width: "400px",
+                height: "100%",
+                objectFit: "contain",
+              }}
+            />
+          </Box>
         </Box>
       </Box>
     </Box>

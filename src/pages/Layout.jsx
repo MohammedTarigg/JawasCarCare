@@ -86,17 +86,20 @@ const Layout = () => {
           backgroundRepeat: "no-repeat",
           backgroundPosition:
             index === 0
-              ? "left 0% bottom 80%"
-              : index === 2
+              ? "left 0% bottom 75%"
+              : index === 1
               ? "left 0% bottom 77%"
+              : index === 2
+              ? "left 0% bottom 70%"
               : "left 0% bottom 70%",
+          // zIndex: "-1",
         }}></Box>
     );
   };
   return (
     <>
       <Box bgcolor={"rgb(9,27,40)"}>
-        <Box display="static">
+        <Box position="absolute " height="100vh" width="100%" overflow="hidden">
           <BackArrowButton setBg={setBg} bgNo={backgroundNo} />
           <ForwardArrowButton setBg={setBg} bgNo={backgroundNo} />
           <ImageRadioGroup bgNo={backgroundNo} setBg={setBg} />
@@ -110,6 +113,7 @@ const Layout = () => {
             height: "100vh",
             px: { xs: "0%", md: "10%" },
             color: "white",
+            // zIndex: "1",
           }}>
           <header ref={homeRef}>
             <Header
