@@ -65,15 +65,15 @@ const AboutPage = () => {
               height: "460px",
               display: "flex",
               justifyContent: "center",
-              width: { xs: "100%", sm: "50%" },
+              width: { xs: "90%", sm: "50%" },
             }}>
             <img
               src={aboutImage}
               alt="About Page"
               style={{
                 borderRadius: "16px",
-                width: "400px",
-                height: "100%",
+                width: "90%",
+                height: "90%",
                 objectFit: "contain",
               }}
             />
