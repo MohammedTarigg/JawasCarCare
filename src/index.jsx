@@ -4,8 +4,6 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import ReactGA from "react-ga";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-
 // import { initializeApp } from "firebase/app";
 // import { getAnalytics } from "firebase/analytics";
 
